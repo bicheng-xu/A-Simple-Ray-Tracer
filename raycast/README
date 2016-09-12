@@ -1,0 +1,39 @@
+
+Bicheng Xu
+301267078
+bichengx@sfu.ca
+
+Basic problems.
+
+Make Description:
+   Type "make" to compile the code.
+
+All the features, 1, 2, 3, 4, 5, 6, and 7, have been implemented.
+
+The refraction feature only works for the user scence, so use -u to test.
+
+Test Command:
+1. Ray-sphere intersection and local reflectance.
+   ./raycast [–u | –d] 0
+2. Shadows.
+   ./raycast [–u | –d] 0 +s
+3. Reflections.
+   ./raycast [–u | –d] step_max +s +l
+   For example,
+   ./raycast [–u | –d] 5 +s +l
+4. Chess board.
+   ./raycast [–u | –d] step_max +s +l +c
+   For example,
+   ./raycast [–u | –d] 5 +s +l +c
+5. Refraction.
+   ./raycast –u step_max +s +l +r +c
+   For example,
+   ./raycast –u 5 +s +l +r +c
+6. Diffuse reflections using stochastic ray generation.
+   ./raycast –u step_max +s +l +r +c +f
+   For example,
+   ./raycast –u 5 +s +l +r +c +f
+7. Supersampling to reduce aliasing.
+   ./raycast –u step_max +s +l +r +f +c +p
+   For example,
+   ./raycast –u 5 +s +l +r +f +c +p
